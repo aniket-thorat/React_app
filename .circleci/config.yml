@@ -29,7 +29,8 @@ jobs:
           root: .
           paths:
             - .
-
+    deploy:
+      -run: ./app && npm netlify:deploy
     
 
 workflows:

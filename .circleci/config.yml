@@ -29,11 +29,12 @@ jobs:
           root: .
           paths:
             - .
-    deploy:
-      steps:
-        -run: 
-          name : Deploying site
-          - command : cd ./app && npm netlify:deploy
+  deploy:
+    - checkout
+    steps:
+      -run: 
+        name : Deploying site
+        - command : cd ./app && npm netlify:deploy
     
 
 workflows:

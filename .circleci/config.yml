@@ -30,7 +30,7 @@ jobs:
           paths:
             - .
   deploy:
-    - checkout
+
     steps:
       -run: 
         name : Deploying site

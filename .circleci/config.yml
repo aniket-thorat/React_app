@@ -35,7 +35,7 @@ jobs:
     steps:
       -run: 
         name : Deploying site
-        - command : cd ./app && npm netlify:deploy
+        - command : npm netlify:deploy
     
 
 workflows:

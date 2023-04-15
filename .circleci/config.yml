@@ -30,7 +30,11 @@ jobs:
           paths:
             - .
     deploy:
-      -run: npm netlify:deploy
+      steps:
+        - checkout
+        -run: 
+          name : Deploying site
+          - command : cd ./app && npm netlify:deploy
     
 
 workflows:
